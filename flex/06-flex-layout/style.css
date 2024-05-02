@@ -24,3 +24,69 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* my additions below */
+
+/* .outer-container { */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+
+/* HEADER & ITS ELEMENTS */
+.header, .footer {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 8px;
+
+}
+
+.footer {
+  background-color: rgb(200, 200, 200);
+}
+
+.left-links, .right-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.left-links {
+  margin-right: auto;
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+.content {
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttons button {
+  height: 32px;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+.right-links a,
+.left-links a {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  font-weight: 650;
+}
